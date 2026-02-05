@@ -4,17 +4,17 @@ import { ArrowLeft } from 'lucide-react';
 
 export default function Placeholder() {
   return (
-    <section className="min-h-screen flex items-center justify-center py-20 px-4">
+    <section className="min-h-screen flex items-center justify-center py-20 px-4 bg-white dark:bg-gray-900 transition-colors">
       <div className="max-w-md text-center">
         <div className="mb-8">
           <div className="text-6xl mb-4">🚀</div>
-          <h1 className="text-4xl font-bold text-gray-900 mb-3">
+          <h1 className="text-4xl font-bold text-gray-900 dark:text-white mb-3">
             Coming Soon
           </h1>
-          <p className="text-lg text-gray-600 mb-2">
+          <p className="text-lg text-gray-600 dark:text-gray-400 mb-2">
             This page is under development.
           </p>
-          <p className="text-gray-500 text-sm mb-8">
+          <p className="text-gray-500 dark:text-gray-500 text-sm mb-8">
             Want to see something here? Continue prompting to help us build more features!
           </p>
         </div>
