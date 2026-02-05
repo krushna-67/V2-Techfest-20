@@ -1,28 +1,32 @@
-import React from 'react';
-import { Lightbulb, Users, Rocket, Award } from 'lucide-react';
+import React from "react";
+import { Lightbulb, Users, Rocket, Award } from "lucide-react";
 
 export default function EventOverview() {
   const features = [
     {
       icon: Lightbulb,
-      title: 'Innovation Showcase',
-      description: 'Explore cutting-edge projects and technologies from leading tech companies and student innovators.'
+      title: "Innovation Showcase",
+      description:
+        "Explore cutting-edge projects and technologies from leading tech companies and student innovators.",
     },
     {
       icon: Users,
-      title: 'Networking Opportunities',
-      description: 'Connect with industry professionals, mentors, and fellow students passionate about technology.'
+      title: "Networking Opportunities",
+      description:
+        "Connect with industry professionals, mentors, and fellow students passionate about technology.",
     },
     {
       icon: Rocket,
-      title: 'Skill Development',
-      description: 'Attend workshops and masterclasses to learn in-demand skills from expert practitioners.'
+      title: "Skill Development",
+      description:
+        "Attend workshops and masterclasses to learn in-demand skills from expert practitioners.",
     },
     {
       icon: Award,
-      title: 'Competitions & Prizes',
-      description: 'Compete in exciting coding challenges and win amazing prizes and recognition.'
-    }
+      title: "Competitions & Prizes",
+      description:
+        "Compete in exciting coding challenges and win amazing prizes and recognition.",
+    },
   ];
 
   return (
@@ -34,8 +38,8 @@ export default function EventOverview() {
             What to Expect
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            V2 Tech Fest brings together the best of innovation, learning, and community. 
-            Here's what makes it special.
+            V2 Tech Fest brings together the best of innovation, learning, and
+            community. Here's what makes it special.
           </p>
         </div>
 
@@ -68,25 +72,34 @@ export default function EventOverview() {
             Why V2 Tech Fest?
           </h3>
           <p className="text-gray-700 dark:text-gray-300 mb-4">
-            Specially designed for college students, V2 Tech Fest is more than just a conference. 
-            It's a launchpad for your tech career. Whether you're a beginner or an experienced developer, 
-            you'll find opportunities to learn, grow, and make meaningful connections.
+            Specially designed for college students, V2 Tech Fest is more than
+            just a conference. It's a launchpad for your tech career. Whether
+            you're a beginner or an experienced developer, you'll find
+            opportunities to learn, grow, and make meaningful connections.
           </p>
           <ul className="grid grid-cols-1 md:grid-cols-2 gap-3 text-gray-700 dark:text-gray-300">
             <li className="flex items-start gap-2">
-              <span className="text-purple-600 dark:text-purple-400 font-bold">•</span>
+              <span className="text-purple-600 dark:text-purple-400 font-bold">
+                •
+              </span>
               <span>100+ workshops and talks</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-purple-600 dark:text-purple-400 font-bold">•</span>
+              <span className="text-purple-600 dark:text-purple-400 font-bold">
+                •
+              </span>
               <span>Direct access to tech leaders</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-purple-600 dark:text-purple-400 font-bold">•</span>
+              <span className="text-purple-600 dark:text-purple-400 font-bold">
+                •
+              </span>
               <span>Free goodies and refreshments</span>
             </li>
             <li className="flex items-start gap-2">
-              <span className="text-purple-600 dark:text-purple-400 font-bold">•</span>
+              <span className="text-purple-600 dark:text-purple-400 font-bold">
+                •
+              </span>
               <span>Networking with 2000+ students</span>
             </li>
           </ul>

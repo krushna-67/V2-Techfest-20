@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import { ArrowLeft } from 'lucide-react';
+import React from "react";
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
 
 export default function Placeholder() {
   return (
@@ -15,7 +15,8 @@ export default function Placeholder() {
             This page is under development.
           </p>
           <p className="text-gray-500 dark:text-gray-500 text-sm mb-8">
-            Want to see something here? Continue prompting to help us build more features!
+            Want to see something here? Continue prompting to help us build more
+            features!
           </p>
         </div>
 

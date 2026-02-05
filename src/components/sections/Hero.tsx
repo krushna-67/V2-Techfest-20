@@ -1,12 +1,12 @@
-import React from 'react';
-import { ArrowRight, Zap } from 'lucide-react';
+import React from "react";
+import { ArrowRight, Zap } from "lucide-react";
 
 export default function Hero() {
   return (
     <section className="relative w-full overflow-hidden">
       {/* Gradient Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-50 via-white to-blue-50 dark:from-gray-900 dark:via-gray-950 dark:to-gray-900" />
-      
+
       {/* Decorative Elements */}
       <div className="absolute top-20 right-0 w-72 h-72 bg-purple-200 dark:bg-purple-900/30 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
       <div className="absolute -bottom-8 left-20 w-72 h-72 bg-blue-200 dark:bg-blue-900/30 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" />
@@ -16,7 +16,9 @@ export default function Hero() {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-100 dark:bg-purple-900/30 rounded-full mb-8">
             <Zap size={16} className="text-purple-600 dark:text-purple-400" />
-            <span className="text-sm font-semibold text-purple-700 dark:text-purple-300">Join the Tech Revolution</span>
+            <span className="text-sm font-semibold text-purple-700 dark:text-purple-300">
+              Join the Tech Revolution
+            </span>
           </div>
 
           {/* Heading */}
@@ -30,8 +32,9 @@ export default function Hero() {
 
           {/* Subheading */}
           <p className="text-lg md:text-xl text-gray-600 dark:text-gray-400 mb-8 max-w-2xl mx-auto leading-relaxed">
-            The ultimate gathering for college students and tech enthusiasts. 
-            Discover innovations, connect with industry leaders, and level up your skills.
+            The ultimate gathering for college students and tech enthusiasts.
+            Discover innovations, connect with industry leaders, and level up
+            your skills.
           </p>
 
           {/* CTA Buttons */}
@@ -47,16 +50,28 @@ export default function Hero() {
           {/* Stats */}
           <div className="grid grid-cols-3 gap-4 md:gap-8 pt-8 border-t border-gray-200 dark:border-gray-800">
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-purple-600 dark:text-purple-400">2K+</div>
-              <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base mt-2">Students Attending</p>
+              <div className="text-3xl md:text-4xl font-bold text-purple-600 dark:text-purple-400">
+                2K+
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base mt-2">
+                Students Attending
+              </p>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400">50+</div>
-              <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base mt-2">Industry Speakers</p>
+              <div className="text-3xl md:text-4xl font-bold text-blue-600 dark:text-blue-400">
+                50+
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base mt-2">
+                Industry Speakers
+              </p>
             </div>
             <div>
-              <div className="text-3xl md:text-4xl font-bold text-purple-600 dark:text-purple-400">3 Days</div>
-              <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base mt-2">Packed With Events</p>
+              <div className="text-3xl md:text-4xl font-bold text-purple-600 dark:text-purple-400">
+                3 Days
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 text-sm md:text-base mt-2">
+                Packed With Events
+              </p>
             </div>
           </div>
         </div>

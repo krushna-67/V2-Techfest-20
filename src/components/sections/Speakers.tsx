@@ -1,60 +1,63 @@
-import React from 'react';
-import { Linkedin, Twitter } from 'lucide-react';
+import React from "react";
+import { Linkedin, Twitter } from "lucide-react";
 
 export default function Speakers() {
   const speakers = [
     {
-      name: 'Sarah Chen',
-      role: 'VP of Engineering at TechCorp',
-      bio: 'Leading teams of 100+ engineers. 10+ years in tech.',
-      image: '🔵',
-      topics: ['Leadership', 'Scalability', 'Team Building'],
-      social: { linkedin: '#', twitter: '#' }
+      name: "Sarah Chen",
+      role: "VP of Engineering at TechCorp",
+      bio: "Leading teams of 100+ engineers. 10+ years in tech.",
+      image: "🔵",
+      topics: ["Leadership", "Scalability", "Team Building"],
+      social: { linkedin: "#", twitter: "#" },
     },
     {
-      name: 'Marcus Johnson',
-      role: 'AI/ML Expert & Researcher',
-      bio: 'PhD in Computer Science. Published researcher in AI ethics.',
-      image: '🟣',
-      topics: ['Machine Learning', 'AI Ethics', 'Innovation'],
-      social: { linkedin: '#', twitter: '#' }
+      name: "Marcus Johnson",
+      role: "AI/ML Expert & Researcher",
+      bio: "PhD in Computer Science. Published researcher in AI ethics.",
+      image: "🟣",
+      topics: ["Machine Learning", "AI Ethics", "Innovation"],
+      social: { linkedin: "#", twitter: "#" },
     },
     {
-      name: 'Priya Sharma',
-      role: 'Founder & CEO of StartupXYZ',
-      bio: 'Built a unicorn startup from scratch. Mentor to 50+ founders.',
-      image: '🟡',
-      topics: ['Entrepreneurship', 'Fundraising', 'Growth'],
-      social: { linkedin: '#', twitter: '#' }
+      name: "Priya Sharma",
+      role: "Founder & CEO of StartupXYZ",
+      bio: "Built a unicorn startup from scratch. Mentor to 50+ founders.",
+      image: "🟡",
+      topics: ["Entrepreneurship", "Fundraising", "Growth"],
+      social: { linkedin: "#", twitter: "#" },
     },
     {
-      name: 'Alex Rodriguez',
-      role: 'Full Stack Developer & Open Source Contributor',
-      bio: 'Core contributor to popular open-source projects.',
-      image: '🟢',
-      topics: ['Web Development', 'DevOps', 'Open Source'],
-      social: { linkedin: '#', twitter: '#' }
+      name: "Alex Rodriguez",
+      role: "Full Stack Developer & Open Source Contributor",
+      bio: "Core contributor to popular open-source projects.",
+      image: "🟢",
+      topics: ["Web Development", "DevOps", "Open Source"],
+      social: { linkedin: "#", twitter: "#" },
     },
     {
-      name: 'Emma Wilson',
-      role: 'Product Manager at Global Tech Company',
-      bio: 'Building products for millions of users worldwide.',
-      image: '🔴',
-      topics: ['Product Strategy', 'User Experience', 'Analytics'],
-      social: { linkedin: '#', twitter: '#' }
+      name: "Emma Wilson",
+      role: "Product Manager at Global Tech Company",
+      bio: "Building products for millions of users worldwide.",
+      image: "🔴",
+      topics: ["Product Strategy", "User Experience", "Analytics"],
+      social: { linkedin: "#", twitter: "#" },
     },
     {
-      name: 'Rajesh Kumar',
-      role: 'Cloud Architect & DevOps Expert',
-      bio: 'Architecting cloud solutions for fortune 500 companies.',
-      image: '⚫',
-      topics: ['Cloud Computing', 'Kubernetes', 'Infrastructure'],
-      social: { linkedin: '#', twitter: '#' }
-    }
+      name: "Rajesh Kumar",
+      role: "Cloud Architect & DevOps Expert",
+      bio: "Architecting cloud solutions for fortune 500 companies.",
+      image: "⚫",
+      topics: ["Cloud Computing", "Kubernetes", "Infrastructure"],
+      social: { linkedin: "#", twitter: "#" },
+    },
   ];
 
   return (
-    <section id="speakers" className="py-20 md:py-32 bg-white dark:bg-gray-900 transition-colors">
+    <section
+      id="speakers"
+      className="py-20 md:py-32 bg-white dark:bg-gray-900 transition-colors"
+    >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
@@ -62,8 +65,8 @@ export default function Speakers() {
             Meet Our Speakers
           </h2>
           <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Learn from industry experts, successful entrepreneurs, and innovative technologists 
-            who are shaping the future of technology.
+            Learn from industry experts, successful entrepreneurs, and
+            innovative technologists who are shaping the future of technology.
           </p>
         </div>
 
@@ -80,9 +83,15 @@ export default function Speakers() {
               </div>
 
               {/* Info */}
-              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{speaker.name}</h3>
-              <p className="text-purple-600 dark:text-purple-400 font-semibold text-sm mb-3">{speaker.role}</p>
-              <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">{speaker.bio}</p>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">
+                {speaker.name}
+              </h3>
+              <p className="text-purple-600 dark:text-purple-400 font-semibold text-sm mb-3">
+                {speaker.role}
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">
+                {speaker.bio}
+              </p>
 
               {/* Topics */}
               <div className="mb-6">
@@ -119,10 +128,12 @@ export default function Speakers() {
 
         {/* More Speakers Info */}
         <div className="mt-16 p-8 bg-gradient-to-r from-purple-100 dark:from-purple-900/30 to-blue-100 dark:to-blue-900/30 rounded-2xl border border-purple-200 dark:border-purple-700 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">More Speakers Coming Soon</h3>
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">
+            More Speakers Coming Soon
+          </h3>
           <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-6">
-            We're continuously adding more amazing speakers and industry leaders to the lineup. 
-            Check back soon for the complete speaker list.
+            We're continuously adding more amazing speakers and industry leaders
+            to the lineup. Check back soon for the complete speaker list.
           </p>
           <button className="px-8 py-3 bg-white dark:bg-gray-800 text-purple-600 dark:text-purple-400 font-semibold rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition">
             Subscribe for Updates
