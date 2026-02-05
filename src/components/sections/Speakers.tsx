@@ -54,14 +54,14 @@ export default function Speakers() {
   ];
 
   return (
-    <section id="speakers" className="py-20 md:py-32 bg-white">
+    <section id="speakers" className="py-20 md:py-32 bg-white dark:bg-gray-900 transition-colors">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 dark:text-white mb-4">
             Meet Our Speakers
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
             Learn from industry experts, successful entrepreneurs, and innovative technologists 
             who are shaping the future of technology.
           </p>
@@ -72,17 +72,17 @@ export default function Speakers() {
           {speakers.map((speaker, index) => (
             <div
               key={index}
-              className="group rounded-2xl bg-gradient-to-br from-gray-50 to-gray-100 p-8 hover:shadow-xl transition transform hover:-translate-y-1 border border-gray-200 hover:border-purple-300"
+              className="group rounded-2xl bg-gradient-to-br from-gray-50 dark:from-gray-800 to-gray-100 dark:to-gray-900 p-8 hover:shadow-xl dark:hover:shadow-2xl transition transform hover:-translate-y-1 border border-gray-200 dark:border-gray-700 hover:border-purple-300 dark:hover:border-purple-600"
             >
               {/* Avatar */}
-              <div className="w-20 h-20 bg-gradient-to-br from-gray-300 to-gray-400 rounded-full flex items-center justify-center text-4xl mb-6 group-hover:scale-110 transition transform">
+              <div className="w-20 h-20 bg-gradient-to-br from-gray-300 to-gray-400 dark:from-gray-700 dark:to-gray-600 rounded-full flex items-center justify-center text-4xl mb-6 group-hover:scale-110 transition transform">
                 {speaker.image}
               </div>
 
               {/* Info */}
-              <h3 className="text-xl font-bold text-gray-900 mb-1">{speaker.name}</h3>
-              <p className="text-purple-600 font-semibold text-sm mb-3">{speaker.role}</p>
-              <p className="text-gray-600 text-sm mb-6 leading-relaxed">{speaker.bio}</p>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-1">{speaker.name}</h3>
+              <p className="text-purple-600 dark:text-purple-400 font-semibold text-sm mb-3">{speaker.role}</p>
+              <p className="text-gray-600 dark:text-gray-400 text-sm mb-6 leading-relaxed">{speaker.bio}</p>
 
               {/* Topics */}
               <div className="mb-6">
@@ -90,7 +90,7 @@ export default function Speakers() {
                   {speaker.topics.map((topic, i) => (
                     <span
                       key={i}
-                      className="px-3 py-1 bg-purple-100 text-purple-700 rounded-full text-xs font-medium"
+                      className="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium"
                     >
                       {topic}
                     </span>
@@ -99,16 +99,16 @@ export default function Speakers() {
               </div>
 
               {/* Social Links */}
-              <div className="flex gap-3 pt-6 border-t border-gray-300">
+              <div className="flex gap-3 pt-6 border-t border-gray-300 dark:border-gray-700">
                 <a
                   href={speaker.social.linkedin}
-                  className="flex-1 py-2 bg-blue-100 hover:bg-blue-600 text-blue-600 hover:text-white rounded-lg flex items-center justify-center transition font-semibold text-sm"
+                  className="flex-1 py-2 bg-blue-100 dark:bg-blue-900/30 hover:bg-blue-600 text-blue-600 dark:text-blue-300 hover:text-white rounded-lg flex items-center justify-center transition font-semibold text-sm"
                 >
                   <Linkedin size={16} className="mr-1" /> LinkedIn
                 </a>
                 <a
                   href={speaker.social.twitter}
-                  className="flex-1 py-2 bg-sky-100 hover:bg-sky-600 text-sky-600 hover:text-white rounded-lg flex items-center justify-center transition font-semibold text-sm"
+                  className="flex-1 py-2 bg-sky-100 dark:bg-sky-900/30 hover:bg-sky-600 text-sky-600 dark:text-sky-300 hover:text-white rounded-lg flex items-center justify-center transition font-semibold text-sm"
                 >
                   <Twitter size={16} className="mr-1" /> Twitter
                 </a>
@@ -118,13 +118,13 @@ export default function Speakers() {
         </div>
 
         {/* More Speakers Info */}
-        <div className="mt-16 p-8 bg-gradient-to-r from-purple-100 to-blue-100 rounded-2xl border border-purple-200 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-3">More Speakers Coming Soon</h3>
-          <p className="text-gray-700 max-w-2xl mx-auto mb-6">
+        <div className="mt-16 p-8 bg-gradient-to-r from-purple-100 dark:from-purple-900/30 to-blue-100 dark:to-blue-900/30 rounded-2xl border border-purple-200 dark:border-purple-700 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 dark:text-white mb-3">More Speakers Coming Soon</h3>
+          <p className="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mb-6">
             We're continuously adding more amazing speakers and industry leaders to the lineup. 
             Check back soon for the complete speaker list.
           </p>
-          <button className="px-8 py-3 bg-white text-purple-600 font-semibold rounded-lg hover:bg-gray-100 transition">
+          <button className="px-8 py-3 bg-white dark:bg-gray-800 text-purple-600 dark:text-purple-400 font-semibold rounded-lg hover:bg-gray-100 dark:hover:bg-gray-700 transition">
             Subscribe for Updates
           </button>
         </div>
